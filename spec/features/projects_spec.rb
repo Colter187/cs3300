@@ -1,7 +1,10 @@
 require 'rails_helper'
 
 RSpec.feature "Projects", type: :feature do
-  pending "add some scenarios (or delete) #{__FILE__}"
+  scenario "back button works" do
+    find_link('Back')[:href].should == '/projects'
+    #find_link('Back')[:target].should == '_blank'
+  end
 end
 require 'rails_helper'
 
