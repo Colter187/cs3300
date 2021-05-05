@@ -14,7 +14,7 @@ script:
 deploy:
  provider: heroku
  api_key: 79d189cc4-a8f3-4729-b100-60b8d6bd2e4b
- app: aqueous-shelf-32758
+ app: aqueous
  run: "rake db:migrate"
  on:
   all_branches: true
